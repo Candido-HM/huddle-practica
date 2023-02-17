@@ -1,0 +1,350 @@
+@charset "UTF-8";
+@font-face {
+  font-family: "Poppins";
+  src: url("/fonts/Poppins/Inter-Bold.ttf");
+}
+@font-face {
+  font-family: "OpenSans";
+  src: url("fonts/Open_Sans/Inter-Bold.ttf");
+}
+body {
+  margin: 0px auto;
+  padding: 0% auto;
+  width: 100%;
+  height: 100vh;
+  background-color: #674BB1;
+  background-image: url("/images/bg-desktop.svg");
+  background-repeat: no-repeat;
+  background-size: 92% 100%;
+}
+
+header {
+  width: 100%;
+  height: 13%;
+}
+header .logo {
+  width: 180px;
+  height: 60px;
+  margin-top: 30px;
+  margin-left: 150px;
+  background-image: url("/images/logo.svg");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  animation: mvlogo 10s infinite linear;
+}
+@keyframes mvlogo {
+  0% {
+    transform: translateY(0px);
+  }
+  25% {
+    transform: translateY(30px);
+  }
+  50% {
+    transform: translateY(0px);
+  }
+  75% {
+    transform: translateY(30px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+main {
+  width: 100%;
+  height: 69%;
+}
+main .image {
+  display: block;
+  float: left;
+  width: 49%;
+  height: 100%;
+  margin-top: 10px;
+  background-image: url("/images/illustration-mockups.svg");
+  background-repeat: no-repeat;
+  background-size: 78% 95%;
+  background-position: right;
+}
+main .register {
+  display: block;
+  float: right;
+  width: 49%;
+  height: 100%;
+  margin-left: 20px;
+}
+main .register h1 {
+  margin-top: 65px;
+  margin-bottom: 0px;
+  width: 100%;
+  font-family: Poppins;
+  color: white;
+  text-align: left;
+  font-size: 35px;
+}
+main .register h2 {
+  margin-top: auto;
+  width: 100%;
+  font-family: Poppins;
+  color: white;
+  text-align: left;
+  font-size: 35px;
+}
+main .register p {
+  width: 75%;
+  font-size: 20px;
+  font-family: OpenSans;
+  color: #D0C1EB;
+}
+main .register .btn {
+  width: 29%;
+  height: 14%;
+  border-radius: 50px;
+  color: #73649F;
+  font-size: 16px;
+  background-color: #FFFFFF;
+  border: 1px solid #5B4B86;
+  box-shadow: 0px 1px 1px #4C3A81, 0px 2px 2px #503B8A, 0px 3px 3px #503B8A, 0px 4px 4px #563E91, 0px 5px 5px #563E91, 0px 6px 6px #563E91, 0px 7px 7px #563E91, 0px 8px 8px #563E91;
+}
+main .register .btn:hover {
+  transition: all 600ms;
+  color: #F3C4F7;
+  background-color: #E980E7;
+  border: 1px solid #703C9D;
+  cursor: pointer;
+  font-size: 18px;
+}
+
+footer {
+  width: 100%;
+  height: 10%;
+}
+footer .iconos {
+  width: 40%;
+  height: 30px;
+  display: flex;
+  justify-content: right;
+}
+footer .iconos .iconf {
+  width: 29px;
+  height: 29px;
+  border: 1px solid white;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  margin-right: 15px;
+  animation: mvfacebook 4s infinite linear;
+}
+@keyframes mvfacebook {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-25px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+footer .iconos .iconf:hover {
+  transition: all 500ms;
+  border: 2px solid #B95DC6;
+  font-size: 20px;
+}
+footer .iconos .iconf:hover .fa-facebook-f {
+  color: #B95DC6 !important;
+}
+footer .iconos .icont {
+  width: 29px;
+  height: 29px;
+  border: 1px solid white;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  margin-right: 15px;
+  animation: mvtwitter 4s infinite linear;
+  animation-delay: 1000ms;
+}
+@keyframes mvtwitter {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-25px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+footer .iconos .icont:hover {
+  transition: all 500ms;
+  border: 2px solid #B95DC6;
+  font-size: 20px;
+}
+footer .iconos .icont:hover .fa-twitter {
+  color: #B95DC6 !important;
+}
+footer .iconos .iconi {
+  width: 29px;
+  height: 29px;
+  border: 1px solid white;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  animation: mvinstagram 4s infinite linear;
+  animation-delay: 2000ms;
+}
+@keyframes mvinstagram {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-25px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+footer .iconos .iconi:hover {
+  transition: all 500ms;
+  border: 2px solid #B95DC6;
+  font-size: 20px;
+}
+footer .iconos .iconi:hover .fa-instagram {
+  color: #B95DC6 !important;
+}
+footer .attribution {
+  float: left;
+  width: 59;
+}
+
+@media (max-width: 1100px) {
+  main .register {
+    width: 44%;
+  }
+  main .image {
+    width: 52%;
+  }
+}
+@media (max-width: 980px) {
+  main .register {
+    width: 42%;
+  }
+  main .image {
+    width: 54%;
+  }
+  main .register .btn {
+    width: 35%;
+    height: 12%;
+  }
+}
+@media (max-width: 860px) {
+  main .register {
+    width: 40%;
+    height: 85%;
+  }
+  main .image {
+    width: 54%;
+  }
+  main .register .btn {
+    width: 35%;
+    height: 12%;
+  }
+  main .register h1 {
+    font-size: 30px;
+  }
+  main .register h2 {
+    font-size: 30px;
+  }
+}
+@media (max-width: 735px) {
+  header .logo {
+    margin-left: 90px;
+  }
+  main .register h1 {
+    font-size: 25px;
+  }
+  main .register h2 {
+    font-size: 25px;
+  }
+  main .register p {
+    font-size: 18px;
+  }
+}
+@media (max-width: 600px) {
+  body {
+    width: 100%;
+    height: 100vh;
+    background-image: url("/images/bg-mobile.svg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+  }
+  main {
+    width: 100%;
+  }
+  main .image {
+    display: block;
+    margin-left: -50px;
+    width: 100%;
+    height: 40%;
+  }
+  main .register {
+    display: block;
+    width: 100%;
+    height: 45%;
+    margin-left: -100px;
+  }
+  main .register h1 {
+    margin-top: 15px;
+    text-align: center;
+  }
+  main .register h2 {
+    margin-top: 15px;
+    text-align: center;
+  }
+  main .register p {
+    width: 100%;
+    margin-left: 20px auto;
+    margin-right: 20px auto;
+    font-size: 23px;
+    font-weight: 400;
+    text-align: center;
+    margin-bottom: 50px;
+  }
+  main .register .btn {
+    width: 110px; /* Para que no se rompa en dos líneas, y lo translade tal cual. */
+    margin-left: 50%;
+    transform: translateX(-50%);
+  }
+  footer {
+    width: 100%;
+    height: 10%;
+    display: flex;
+    justify-content: center;
+  }
+  footer .iconos {
+    justify-content: center;
+  }
+}
+@media (max-width: 414px) {
+  footer {
+    margin-top: 20px;
+  }
+}
+@media (max-width: 375px) {
+  main .register p {
+    margin-bottom: 10px;
+  }
+  footer {
+    margin-top: 55px;
+    width: 100%;
+    height: 10px;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
